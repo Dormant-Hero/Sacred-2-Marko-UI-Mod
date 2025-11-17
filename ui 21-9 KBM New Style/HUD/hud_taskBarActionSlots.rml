@@ -63,28 +63,28 @@
 
             .inventory-right .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
-                top: 12dp;
+                left: -10dp;
+                top: 9dp;
             }
 
             .inventory-right .action-slot-container .top-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
-                top: 12dp;
+                left: 45dp;
+                top: 9dp;
             }
 
             .inventory-right .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
-                top: 70dp;
+                left: -10dp;
+                top: 67dp;
             }
 
             .inventory-right .action-slot-container .bottom-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
-                top: 70dp;
+                left: 45dp;
+                top: 67dp;
             }
 
 
@@ -92,7 +92,7 @@
             .inventory-left {
                 position: absolute;
                 bottom: 22dp;
-                left: 380dp;
+                left: 385dp;
                 width: 130dp;
                 height: 130dp;
                 decorator: image(InventoryBackgroundL2);
@@ -100,25 +100,25 @@
 
             .inventory-left .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: -10dp;
                 top: 14dp;
             }
 
             .inventory-left .action-slot-container .top-row2{
                 position: absolute;
-                left: 70dp;
+                left: 48dp;
                 top: 14dp;
             }
 
             .inventory-left .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: -10dp;
                 top: 70dp;
             }
 
             .inventory-left .action-slot-container .bottom-row2{
                 position: absolute;
-                left: 70dp;
+                left: 48dp;
                 top: 70dp;
             }
 
@@ -159,7 +159,7 @@
             .combat-arts-left {
                 position: absolute;
                 bottom: 13dp;
-                left: 33dp;
+                left: 35dp;
                 width: 130dp;
                 height: 130dp;
                 decorator: image(InventoryBackgroundL2);
@@ -174,32 +174,32 @@
 
             .combat-arts-left .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: -10dp;
                 top: 14dp;
             }
 
             .combat-arts-left .action-slot-container .top-row2{
                 position: absolute;
-                left: 70dp;
+                left: 48dp;
                 top: 14dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: -10dp;
                 top: 70dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row2{
                 position: absolute;
-                left: 70dp;
+                left: 48dp;
                 top: 70dp;
             }
 
             .combat-arts-right {
                 position: absolute;
                 bottom: 22dp;
-                right: 380dp;
+                right: 385dp;
                 width: 130dp;
                 height: 130dp;
                 decorator: image(InventoryBackgroundR2);
@@ -214,27 +214,27 @@
 
             .combat-arts-right .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: -10dp;
                 top: 12dp;
             }
 
             .combat-arts-right .action-slot-container .top-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 48dp;
                 top: 12dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: -10dp;
                 top: 70dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 48dp;
                 top: 70dp;
             }
 
@@ -349,7 +349,6 @@
                 <button id="slot-1" raw_id="1" class="hudSlot action-slot top-row2"></button>
                 <button id="slot-2" raw_id="2" class="hudSlot action-slot bottom-row2"></button>
                 <button id="slot-3" raw_id="3" class="hudSlot action-slot bottom-row1"></button>
-
             </div>
             <div class="" id="switch-prompt"></div>
         </div>
