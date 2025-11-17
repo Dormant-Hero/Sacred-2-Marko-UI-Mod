@@ -93,50 +93,50 @@
 
 button.hudSlot
 {
-    decorator: image(item-slot-default contain);
+    decorator: image(CA-slot-default contain);
 }
 
 button.hudSlot:focus,
 button.hudSlot:focus-visible,
 button.hudSlot:hover
 {
-    decorator: image(item-slot-selected contain);
+    decorator: image(CA-slot-hover contain);
 }
 
 button.hudSlot:selected,
 button.hudSlot:active
 {
-    decorator: image(item-slot-active contain);
+    decorator: image(CA-slot-active contain);
 }
 
 button.hudSlot:disabled
 {
-    decorator: image(item-slot-locked contain);
+    decorator: image(CA-slot-locked contain);
 }
 
 /*potions*/
 
 button.hudSlotPotion
 {
-    decorator: image(potion-slot-default contain);
+    decorator: image(CA-slot-default contain);
 }
 
 button.hudSlotPotion:focus,
 button.hudSlotPotion:focus-visible,
 button.hudSlotPotion:hover
 {
-    decorator: image(potion-slot-selected contain);
+    decorator: image(CA-slot-hover contain);
 }
 
 button.hudSlotPotion:selected,
 button.hudSlotPotion:active
 {
-    decorator: image(potion-slot-active contain);
+    decorator: image(CA-slot-active contain);
 }
 
 button.hudSlotPotion:disabled
 {
-    decorator: image(potion-slot-locked contain);
+    decorator: image(CA-slot-locked contain);
 }
 
 /*buffs*/
