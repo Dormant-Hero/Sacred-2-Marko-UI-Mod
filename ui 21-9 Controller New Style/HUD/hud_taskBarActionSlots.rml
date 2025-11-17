@@ -257,18 +257,18 @@
             }
 
             button.active-weapon-slot {
-                decorator: image(item-slot-active contain);
+                decorator: image(CA-slot-active contain);
             }
 
             button.active-weapon-slot:focus,
             button.active-weapon-slot:focus-visible,
             button.active-weapon-slot:hover {
-                decorator: image(item-slot-active contain);
+                decorator: image(CA-slot-active contain);
             }
 
             button.active-weapon-slot:selected,
             button.active-weapon-slot:active {
-                decorator: image(item-slot-active contain);
+                decorator: image(CA-slot-active contain);
             }
 
             button.active-spell-slot {
