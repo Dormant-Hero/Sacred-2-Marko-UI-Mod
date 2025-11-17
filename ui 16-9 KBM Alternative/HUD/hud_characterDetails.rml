@@ -8,15 +8,17 @@
           body {
           z-index: -1;
           }
+          
 
           .player-portrait-position
           {
           width: 150dp;
           height: 195dp;
           position: absolute;
-          top: 24dp;
-          left: 24dp;
+          top: 10dp;
+          left: 2dp;
           display: block;
+          transform: scale(0.8);
           }
 
           #character-icon
@@ -39,6 +41,7 @@
           position: relative;
           fill-image: HeroPortraitExp;
           z-index: 1;
+          transform: scale(1);
           }
 
           .gaugeHP
@@ -50,6 +53,7 @@
           position: absolute;
           fill-image: HeroPortraitHp;
           z-index: 1;
+          transform: scale(1);
           }
 
           .gaugeShield
@@ -59,10 +63,10 @@
           left: 0dp;
           top: 0dp;
           position: absolute;
-          fill-image: HeroPortraitHp;
-          transform: scale(1.1);
+          fill-image: HeroPortraitShield;
+          transform: scale(1);
           z-index: 50;
-          image-color: #1a216e;
+          opacity: 0.5;
           }
 
           .gauges-container
@@ -192,7 +196,7 @@
 
         </style>
     </head>
-    <body class="player-portrait-position hero-portrait-back">
+    <body class="player-portrait-position hero-portrait-back" id="portrait-edit">
     <div class ="gauges-container">
         <progress id="xp-gauge" class="player-portrait-position gaugeXP" direction="clockwise" start-edge="bottom" value="0.3"/>
         <progress id="health-gauge" class="player-portrait-position gaugeHP" direction="clockwise" start-edge="bottom" value="0.3"/>
