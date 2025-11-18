@@ -19,6 +19,7 @@
         EnemyHpAttackIcon: 868px 22px 98px 68px;
         HeroPortraitGem-active: 970px 22px 96px 96px;
         HeroPortraitGem-unactive: 1070px 22px 96px 96px;
+        HeroPortraitShield: 762px 682px 376px 376px;
         EnemyHpBack: 2px 94px 894px 96px;
         TeamPortraitBack: 1170px 22px 200px 200px;
         TeamPortraitHP: 1374px 22px 200px 200px;
