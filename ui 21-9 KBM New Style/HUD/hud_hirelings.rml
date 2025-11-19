@@ -10,11 +10,10 @@
             {
                 width:90dp;
                 position: absolute;
-                bottom: 220dp;
+                bottom: 2dp;
                 right: 24dp;
                 display: flex;
                 flex-direction: column;
-
                 align-items: end;
                 justify-content: end;
                 justify-items: end;
