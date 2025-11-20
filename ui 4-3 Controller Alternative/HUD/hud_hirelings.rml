@@ -10,15 +10,15 @@
             {
                 width:90dp;
                 position: absolute;
-                bottom: 220dp;
-                right: 24dp;
+                top: 170dp;
+                left: 10dp;
                 display: flex;
                 flex-direction: column;
-
                 align-items: end;
                 justify-content: end;
                 justify-items: end;
                 align-content: end;
+                gap: -1dp;
             }
 
             .hireling-background
@@ -28,6 +28,7 @@
                 decorator: image(TeamPortraitBack contain);
                 z-index: 1;
                 display: block;
+
             }
 
             .hireling-hp
