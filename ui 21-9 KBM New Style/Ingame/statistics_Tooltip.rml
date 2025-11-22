@@ -34,7 +34,8 @@
             .tooltip-wide
             {
                 pointer-events: auto;
-                width: 270dp;
+                width: 1012dp;
+                height: 87%;
                 position: absolute;
                 display: flex;
                 justify-content: space-between;
@@ -42,25 +43,19 @@
                 flex-direction: column;
             }
 
+            /* keep the class in case it's referenced, but unused */
             .tooltip-wide-second
             {
-                pointer-events: auto;
-                width: 270dp;
-                position: absolute;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-direction: column;
-                top:10%;
-                left: 805dp;
+                pointer-events: none;
+                display: none;
             }
 
             .stat-name
             {
                 font-family: Inria Sans;
                 color: secondary-list-label;
-                font-size: 1.7vh;
-                width: 80%;
+                font-size: 1.3vh;
+                width: 70%;
                 height: auto;
                 text-anchor: start;
             }
@@ -68,9 +63,9 @@
             .stat-value
             {
                 color: secondary-list-value;
-                width: 35%;
+                width: 30%;
                 text-align: right;
-                font-size: 1.7vh;
+                font-size: 1.3vh;
             }
 
             .bonus-stat-container
@@ -79,33 +74,39 @@
                 width: 100%;
                 height: auto;
                 font-family: Inria Sans;
-                line-height: 1.8vh;
+                line-height: 1.0vh;
                 justify-content: space-between;
                 align-items: center;
             }
 
+            #statistics-columns
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 95%;
+                gap: 10dp;
+            }
+
+            .stats-column
+            {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 2dp;
+            }
 
         </style>
     </head>
-
     <body class="no-pointer-events" style="z-index: 100;">
-
     <panel id="tooltip-panel" class="tooltip-wide tooltip-background">
         <div id="tooltip-panel-gradient" class="tooltip-gradient">
-            <div id="tooltip-panel-frame" class="tooltip-frame rare-0-frame">
+          <!--  <div id="tooltip-panel-frame" class="tooltip-frame rare-0-frame">-->
                 <div style="margin-top: 10dp; margin-bottom: 10dp; font-family: OptimusPrinceps; font-size: 2vh; color: title;">4246066798</div>
-                <div id="dynamic-bonus-stats">
+                <div id="statistics-columns">
+                <div id="dynamic-bonus-stats" class="stats-column"></div>
+                    <div id="dynamic-bonus-stats-secondary" class="stats-column"></div>
                 </div>
-            </div>
-        </div>
-    </panel>
-
-    <panel id="tooltip-panel-second" class="tooltip-wide-second tooltip-background">
-        <div id="tooltip-panel-gradient" class="tooltip-gradient">
-            <div id="tooltip-panel-frame" class="tooltip-frame rare-0-frame">
-                <div style="margin-top: 10dp;" id="dynamic-bonus-stats-secondary">
-                </div>
-            </div>
         </div>
     </panel>
     </body>
