@@ -14,11 +14,13 @@
 
             .action-slot {
                 position: relative;
-                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 32dp;
                 height: 32dp;
+                overflow: hidden;
             }
-
 
 
             .action-slot-row {
