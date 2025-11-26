@@ -351,6 +351,13 @@
                   <button class="button-next" onclick="OnClick_NextDisplayWindowMode"></button>
                 </li>
 
+                                <li class="option-container">
+                  <label id="display-vsync-caption" class="option-caption">3609580916</label> <!-- V-Sync -->
+                  <button class="button-previous" onclick="OnClick_PreviousDisplayVSync"></button>
+                  <label id="display-vsync-value" class="value-label">N/A</label>
+                  <button class="button-next" onclick="OnClick_NextDisplayVSync"></button>
+                </li>
+
                 <!-- Performance -->
                 <li class="sub-category-caption">
                   <div class="ornament-left"></div>

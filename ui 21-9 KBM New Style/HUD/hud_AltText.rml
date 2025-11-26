@@ -49,6 +49,6 @@
         </style>
     </head>
     <body class="no-pointer-events">
-        <button id="text-content" class="alt-text" onclick="OnShowAltTextButtonDetails"></button>
+        <button id="text-content" class="alt-text no-fake-event-attributes" onclick="OnShowAltTextButtonDetails"></button>
     </body>
 </rml>
