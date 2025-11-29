@@ -22,7 +22,9 @@
                 overflow: hidden;
             }
 
+
             .action-slot-row {
+                left: 5.5dp;
                 display: flex;
                 flex-direction: row;
                 position: relative;
@@ -38,7 +40,7 @@
 
             .action-slot-container-left {
                 position: absolute;
-                left: 28%;
+                left: 27.5%;
                 bottom: 35dp;
             }
 
@@ -49,7 +51,7 @@
             .action-slot-container-right {
                 position: absolute;
                 bottom: 35dp;
-                right: 23.7%;
+                right: 24.1%;
             }
 
             /* Inventory */
@@ -64,27 +66,27 @@
 
             .inventory-right .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 12dp;
             }
 
             .inventory-right .action-slot-container .top-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 12dp;
             }
 
             .inventory-right .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .inventory-right .action-slot-container .bottom-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 
@@ -93,7 +95,7 @@
             .inventory-left {
                 position: absolute;
                 bottom: 22dp;
-                left: 380dp;
+                left: 378dp;
                 width: 130dp;
                 height: 130dp;
                 decorator: image(InventoryBackgroundL2);
@@ -101,25 +103,25 @@
 
             .inventory-left .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 14dp;
             }
 
             .inventory-left .action-slot-container .top-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 14dp;
             }
 
             .inventory-left .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .inventory-left .action-slot-container .bottom-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 
@@ -175,25 +177,25 @@
 
             .combat-arts-left .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 14dp;
             }
 
             .combat-arts-left .action-slot-container .top-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 14dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 
@@ -215,27 +217,27 @@
 
             .combat-arts-right .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 12dp;
             }
 
             .combat-arts-right .action-slot-container .top-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 12dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 

@@ -66,27 +66,27 @@
 
             .inventory-right .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 12dp;
             }
 
             .inventory-right .action-slot-container .top-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 12dp;
             }
 
             .inventory-right .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .inventory-right .action-slot-container .bottom-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 
@@ -103,25 +103,25 @@
 
             .inventory-left .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 14dp;
             }
 
             .inventory-left .action-slot-container .top-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 14dp;
             }
 
             .inventory-left .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .inventory-left .action-slot-container .bottom-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 
@@ -177,25 +177,25 @@
 
             .combat-arts-left .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 14dp;
             }
 
             .combat-arts-left .action-slot-container .top-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 14dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 
@@ -217,27 +217,27 @@
 
             .combat-arts-right .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 12dp;
             }
 
             .combat-arts-right .action-slot-container .top-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 12dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 

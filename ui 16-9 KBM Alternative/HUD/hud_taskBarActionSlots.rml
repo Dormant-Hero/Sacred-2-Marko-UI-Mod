@@ -24,6 +24,7 @@
 
 
             .action-slot-row {
+                left: 5.5dp;
                 display: flex;
                 flex-direction: row;
                 position: relative;
@@ -65,27 +66,27 @@
 
             .inventory-right .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 12dp;
             }
 
             .inventory-right .action-slot-container .top-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 12dp;
             }
 
             .inventory-right .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .inventory-right .action-slot-container .bottom-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 
@@ -102,25 +103,25 @@
 
             .inventory-left .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 14dp;
             }
 
             .inventory-left .action-slot-container .top-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 14dp;
             }
 
             .inventory-left .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .inventory-left .action-slot-container .bottom-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 
@@ -176,25 +177,25 @@
 
             .combat-arts-left .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 14dp;
             }
 
             .combat-arts-left .action-slot-container .top-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 14dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row2{
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 
@@ -216,27 +217,27 @@
 
             .combat-arts-right .action-slot-container .top-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 12dp;
             }
 
             .combat-arts-right .action-slot-container .top-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 12dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 12dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row2{
                 display: block-inline;
                 position: absolute;
-                left: 70dp;
+                left: 62dp;
                 top: 70dp;
             }
 
@@ -351,8 +352,6 @@
                 <button id="slot-1" raw_id="1" class="hudSlot action-slot top-row2"></button>
                 <button id="slot-2" raw_id="2" class="hudSlot action-slot bottom-row2"></button>
                 <button id="slot-3" raw_id="3" class="hudSlot action-slot bottom-row1"></button>
-
-
             </div>
             <div class="" id="switch-prompt"></div>
         </div>

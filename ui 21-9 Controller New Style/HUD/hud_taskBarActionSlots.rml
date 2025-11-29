@@ -22,8 +22,9 @@
                 overflow: hidden;
             }
 
+
             .action-slot-row {
-                left: 23dp;
+                left: 5.5dp;
                 display: flex;
                 flex-direction: row;
                 position: relative;
@@ -39,7 +40,7 @@
 
             .action-slot-container-left {
                 position: absolute;
-                left: 33.5%;
+                left: 34.7%;
                 bottom: 35dp;
             }
 
@@ -50,7 +51,7 @@
             .action-slot-container-right {
                 position: absolute;
                 bottom: 35dp;
-                right: 33.6%;
+                right: 32.5%;
             }
 
             /* Inventory */
@@ -65,28 +66,28 @@
 
             .inventory-right .action-slot-container .top-row1{
                 position: absolute;
-                left: -10dp;
-                top: 9dp;
+                left: 4dp;
+                top: 12dp;
             }
 
             .inventory-right .action-slot-container .top-row2{
                 display: block-inline;
                 position: absolute;
-                left: 45dp;
-                top: 9dp;
+                left: 62dp;
+                top: 12dp;
             }
 
             .inventory-right .action-slot-container .bottom-row1{
                 position: absolute;
-                left: -10dp;
-                top: 67dp;
+                left: 4dp;
+                top: 70dp;
             }
 
             .inventory-right .action-slot-container .bottom-row2{
                 display: block-inline;
                 position: absolute;
-                left: 45dp;
-                top: 67dp;
+                left: 62dp;
+                top: 70dp;
             }
 
 
@@ -94,7 +95,7 @@
             .inventory-left {
                 position: absolute;
                 bottom: 22dp;
-                left: 385dp;
+                left: 380dp;
                 width: 130dp;
                 height: 130dp;
                 decorator: image(InventoryBackgroundL2);
@@ -102,25 +103,25 @@
 
             .inventory-left .action-slot-container .top-row1{
                 position: absolute;
-                left: -10dp;
+                left: 4dp;
                 top: 14dp;
             }
 
             .inventory-left .action-slot-container .top-row2{
                 position: absolute;
-                left: 48dp;
+                left: 62dp;
                 top: 14dp;
             }
 
             .inventory-left .action-slot-container .bottom-row1{
                 position: absolute;
-                left: -10dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .inventory-left .action-slot-container .bottom-row2{
                 position: absolute;
-                left: 48dp;
+                left: 62dp;
                 top: 70dp;
             }
 
@@ -161,7 +162,7 @@
             .combat-arts-left {
                 position: absolute;
                 bottom: 13dp;
-                left: 35dp;
+                left: 33dp;
                 width: 130dp;
                 height: 130dp;
                 decorator: image(InventoryBackgroundL2);
@@ -176,32 +177,32 @@
 
             .combat-arts-left .action-slot-container .top-row1{
                 position: absolute;
-                left: -10dp;
+                left: 4dp;
                 top: 14dp;
             }
 
             .combat-arts-left .action-slot-container .top-row2{
                 position: absolute;
-                left: 48dp;
+                left: 62dp;
                 top: 14dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row1{
                 position: absolute;
-                left: -10dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row2{
                 position: absolute;
-                left: 48dp;
+                left: 62dp;
                 top: 70dp;
             }
 
             .combat-arts-right {
                 position: absolute;
                 bottom: 22dp;
-                right: 385dp;
+                right: 380dp;
                 width: 130dp;
                 height: 130dp;
                 decorator: image(InventoryBackgroundR2);
@@ -216,27 +217,27 @@
 
             .combat-arts-right .action-slot-container .top-row1{
                 position: absolute;
-                left: -10dp;
+                left: 4dp;
                 top: 12dp;
             }
 
             .combat-arts-right .action-slot-container .top-row2{
                 display: block-inline;
                 position: absolute;
-                left: 48dp;
+                left: 62dp;
                 top: 12dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row1{
                 position: absolute;
-                left: -10dp;
+                left: 4dp;
                 top: 70dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row2{
                 display: block-inline;
                 position: absolute;
-                left: 48dp;
+                left: 62dp;
                 top: 70dp;
             }
 
