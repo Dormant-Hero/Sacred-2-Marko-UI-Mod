@@ -317,8 +317,18 @@
     pointer-events: none;
 }
 
+.inventory-item:hover .item-background{
+    image-color: rgba(255, 255, 255, 255);
+}
+
+.inventory-item:hover .item-icon{
+    /*transform: scale(1.15);*/
+    z-index:7;
+}
+
 .item-background
 {
+    image-color: rgba(160, 160, 160, 255);
     z-index: 4;
 }
 

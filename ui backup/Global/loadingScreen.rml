@@ -12,6 +12,7 @@
             align-items: center;
             flex-direction: column;
             font-family: "Inria Sans";
+            z-index: 100001;
         }
 
         .image-logo

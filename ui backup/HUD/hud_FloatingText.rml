@@ -1,4 +1,3 @@
-
 <rml>
     <head>
         <link type="text/rcss" href="../global/globalElements.rcss"/>
@@ -14,7 +13,7 @@
                 left:0;
                 transform: translateX(-50%);
                 opacity: 1;
-				font-effect: outline(2dp black);
+				font-effect: outline(1.5dp black);
 				white-space: nowrap;
             }
 

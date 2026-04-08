@@ -132,6 +132,51 @@ also add empty: 0px 0px 1px 1px;
     }
 }
 
+@keyframes animation-pop-out {
+    from {
+        transform: scale(0.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes animation-move-up-20 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20vh);
+    }
+}
+
+@keyframes animation-move-up-10 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10vh);
+    }
+}
+
+@keyframes animation-move-up-15 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-15vh);
+    }
+}
+
+@keyframes animation-move-up-30 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10vh);
+    }
+}
+
 body {
     font-family: Inria Sans;
     height: 100%;

@@ -158,6 +158,10 @@
                 width: 90%;
                 height: 10dp;
             }
+			
+			.ca-regen-bar-bg-flip {
+                decorator: image(CombatArtsRegen-bar flip-horizontal contain);
+            }
 
             .regen-bar {
                 width: 100%;
@@ -428,7 +432,7 @@
                 <div class="aspect-regen-indicator-panel">
                     <div class="damage-armor-total-value" id="aspect-regen-value-0">100%</div>
                     <div class="ca-regen-bar">
-                        <div class="ca-regen-bar-bg regen-bar">
+                        <div class="ca-regen-bar-bg-flip regen-bar">
                             <div class="ca-regen-bar-indicator regen-indicator" id="ca-regen-indicator-0"></div>
                         </div>
                     </div>
@@ -440,7 +444,7 @@
                 <div class="aspect-regen-indicator-panel">
                     <div class="damage-armor-total-value" id="aspect-regen-value-1">100%</div>
                     <div class="ca-regen-bar">
-                        <div class="ca-regen-bar-bg regen-bar">
+                        <div class="ca-regen-bar-bg-flip regen-bar">
                             <div class="ca-regen-bar-indicator regen-indicator" id="ca-regen-indicator-1"></div>
                         </div>
                     </div>
@@ -452,7 +456,7 @@
                 <div class="aspect-regen-indicator-panel">
                     <div class="damage-armor-total-value" id="aspect-regen-value-2">100%</div>
                     <div class="ca-regen-bar">
-                        <div class="ca-regen-bar-bg regen-bar">
+                        <div class="ca-regen-bar-bg-flip regen-bar">
                             <div class="ca-regen-bar-indicator regen-indicator" id="ca-regen-indicator-2"></div>
                         </div>
                     </div>

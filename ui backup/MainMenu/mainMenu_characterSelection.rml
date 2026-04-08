@@ -43,8 +43,8 @@
                 overflow-y: hidden; /* Disable vertical scrolling */
                 overscroll-behavior: contain;
                 gap: 20dp;
-                margin-top: 90dp;
-                height: 550dp;
+                margin-top: 55dp;
+                height: 900dp;
                 width: 100%;
                 padding-left: 40dp;
             }
@@ -143,14 +143,14 @@
                 text-align: left;
                 font-size: 14dp;
                 width: 90%;
-                height: 35%;
+                height: 40%;
                 padding-left: 10dp;
                 padding-right: 10dp;
-                min-height: 220dp;
+                min-height: 260dp;
             }
             .header-spacer
             {
-                height: 15dp;
+                height: 25dp;
             }
 
             card .hero-info-header {
@@ -160,8 +160,8 @@
                 max-height: 20%;
                 padding-left: 10dp;
                 padding-right: 10dp;
-                margin-top: 20dp;
-                margin-bottom: 5dp;
+                margin-top: 0dp;
+                margin-bottom: 0dp;
 
                 position: relative;
                 left: 50%;
@@ -301,7 +301,7 @@
                 z-index: 1;
                 mask-image: image(Choose-save-mask contain);
                 position: relative;
-                top: -28dp;
+                top: -29dp;
             }
 
             .corner-left
@@ -429,6 +429,9 @@
                             </div>
                         </div>
 
+						<div data-if="!HeroCard.bHardcore">
+							 <div><span class="secondary-list-label" style="color: transparent;">0</span></div>
+						</div>
                         <div class="separator"></div>
                         <div><span class="secondary-list-label">1207294411</span><span class="secondary-list-value">{{ HeroCard.HeroClass }}</span></div>
                         <div class="separator"></div>
@@ -442,6 +445,15 @@
                                 <button class="button-previous" data-event-click="PrevDifficulty(it_index)"></button>
                                 <span class="secondary-list-value" style="width: 140dp; text-anchor: middle; text-align: center;">{{ HeroCard.DifficultyString }}</span>
                                 <button class="button-next" data-event-click="NextDifficulty(it_index)"></button>
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                        <div>
+                            <span class="secondary-list-label">0920146234</span>
+                            <div class="difficulty-button" style="justify-content: space-between" style="width: 155dp;">
+                                <button class="button-previous" data-event-click="PrevGameType(it_index)"></button>
+                                <span class="secondary-list-value" style="width: 140dp; text-anchor: middle; text-align: center;">{{ HeroCard.GameTypeString }}</span>
+                                <button class="button-next" data-event-click="NextGameType(it_index)"></button>
                             </div>
                         </div>
                         <div class="separator"></div>
