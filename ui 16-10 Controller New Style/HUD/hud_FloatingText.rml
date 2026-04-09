@@ -1,31 +1,37 @@
-
 <rml>
     <head>
         <link type="text/rcss" href="../global/globalElements.rcss"/>
         <title>hud_FloatingText</title>
         <style>
-
-            .floating-text
-            {
+            .floating-text {
                 font-family: "Inria Sans";
-                font-size: 3.0vh;
                 position: absolute;
-                top:0;
-                left:0;
+                top: 0;
+                left: 0;
                 transform: translateX(-50%);
                 opacity: 1;
-				font-effect: outline(2dp black);
-				white-space: nowrap;
+                font-effect: outline(2dp black);
+                white-space: nowrap;
+                font-size: 3vh;
             }
 
-            .floating-text.damage
-            {
+            /* ADDITIONAL DAMAGE */
+            .floating-text.damage {
+                padding-bottom: 12vh;
+                vertical-align: top;
             }
 
-            .damage-pop{
-                font-size: 3.5vh;
-                animation: .5s elastic-out animation-pop-out;
+            /* NORMAL DAMAGE */
+            .damage-pop {
+                padding-top: 10vh;
             }
+
+            /* Engine seems to control the DIV but I can control the span */
+            #text-content {
+                display: inline-block;
+                position: relative;
+            }
+
 
             .move-up-2
             {
@@ -41,6 +47,7 @@
             {
                 animation: 10s cubic-out animation-move-up-10;
             }
+
         </style>
     </head>
     <body class="no-pointer-events">
