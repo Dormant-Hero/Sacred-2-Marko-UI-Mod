@@ -17,13 +17,13 @@
 
             /* ADDITIONAL DAMAGE */
             .floating-text.damage {
-                padding-bottom: 12vh;
+                padding-bottom: 3vh;
                 vertical-align: top;
             }
 
             /* NORMAL DAMAGE */
             .damage-pop {
-                padding-top: 10vh;
+                padding-top: 3vh;
             }
 
             /* Engine seems to control the DIV but I can control the span */
