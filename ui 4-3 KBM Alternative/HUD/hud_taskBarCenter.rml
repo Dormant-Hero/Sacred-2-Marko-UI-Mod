@@ -91,23 +91,23 @@
                 left: 345dp;
                 decorator: image(InventorySlot-center-bigx3 contain);
                 height: 100dp;
-                transform: scale(0.58);
+                transform: scale(0.57);
 
             }
 
             .taskbar.inventory #left-slots {
-                transform: scale(1);
+                transform: scale(0.98);
                 position: relative;
-                right: 75dp;
-                top: 30dp;
-                flex-direction: row;
+                right: 10dp;
+                top: 50dp;
 }
 
             .taskbar.inventory #right-slots {
                 transform: scale(1);
                 position: relative;
-                left: -40dp;
+                left: 20dp;
                 top: 0dp;
+                display: flex;
                 flex-direction: row;
 }
 
@@ -120,8 +120,46 @@
                 height: 100dp;
             }
 
+
+            /*Top and Bottom mixed up oops sorry (throwback to left and right mixed up)*/
+            .taskbar.inventory #potion-row-top {
+                right: 0dp;
+                top: -14dp;
+            }
+
+            .taskbar.inventory #potion-row-bottom {
+                left: -130dp;
+                bottom: 0dp;
+            }
+
+            .taskbar.inventory .potion-row {
+                position: absolute;
+                width: 150dp;
+                height: 50dp;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                transform: scale(0.7);
+            }
+
+            .taskbar.inventory .god-spell-slot {
+                left: 20dp;
+                width: 96dp;
+                height: 96dp;
+            }
+
+
+            .taskbar.inventory #buff-slots-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+                left: 20dp;
+            }
+
             .taskbar.combat-arts {
-                left: -342dp;
+                left: -348dp;
                 decorator: image(InventorySlot-center-bigx3 contain);
                 height: 100dp;
                 transform: scale(0.57);
@@ -145,10 +183,50 @@
             .taskbar.combat-arts #right-slots {
                 transform: scale(1);
                 position: relative;
+                display: flex;
                 left: -40dp;
                 top: 0dp;
                 flex-direction: row;
 }
+
+            /*Top and Bottom mixed up oops sorry (throwback to left and right mixed up)*/
+            .taskbar.combat-arts #potion-row-top {
+                right: -60dp;
+                top: 6dp;
+                transform: scale(0.7);
+            }
+
+            .taskbar.combat-arts #potion-row-bottom {
+                left: -70dp;
+                bottom: -20dp;
+                transform: scale(0.7);
+            }
+
+            .taskbar.combat-arts .potion-row {
+                position: absolute;
+                width: 150dp;
+                height: 50dp;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                transform: scale(0.78);
+            }
+
+            .taskbar.combat-arts .god-spell-slot {
+                left: 16dp;
+                width: 96dp;
+                height: 96dp;
+            }
+
+            .taskbar.combat-arts #buff-slots-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+                left: 75dp;
+            }
+
 
             .stack-empty {
                 opacity: 0.5;
@@ -228,7 +306,7 @@
             }
 
             .hudSlotPotion {
-                bottom: 32dp;
+                bottom: 60dp;
                 left: 0dp;
             }
 
@@ -239,21 +317,30 @@
 
             #right-slots{
                 display: flex;
-                flex-direction: column-reverse;
+/*                flex-direction: column;*/
                 position: relative;
                 bottom: 16dp;
                 transform: scale(0.7);
-                left:480dp;
+                left:320dp;
+            }
+
+            #buff-slots-container {
+                display: flex;
+                flex-direction: column-reverse;
             }
 
             #left-slots{
                 display: flex;
                 flex-direction: column;
                 position: relative;
-                bottom: -4dp;
+                bottom: 30dp;
                 transform: scale(0.7);
-                right: 600dp;
+                right: 440dp;
             }
+
+
+
+
 
         </style>
     </head>
@@ -265,10 +352,19 @@
         <div class="use-buff buff-prompt" id="prompt-buff"></div>
         <div class="use-potion potion-prompt" id="prompt-potion"></div>
         <!-- Potions -->
+        <div id="potion-slots-container">
         <div id="left-slots">
+        <div id="potion-row-top" class="potion-row">
+        <button id="slot-l-5" class="hudSlotPotion action-slot"  style=""></button>
+        <button id="slot-l-4" class="hudSlotPotion action-slot"></button>
+        <button id="slot-l-3" class="hudSlotPotion action-slot"></button>
+        </div>
+        <div id="potion-row-bottom" class="potion-row">
         <button id="slot-l-2" class="hudSlotPotion action-slot"  style=""></button>
         <button id="slot-l-1" class="hudSlotPotion action-slot"></button>
         <button id="slot-l-0" class="hudSlotPotion action-slot"></button>
+        </div>
+        </div>
         </div>
 <!--        <p class="spacer"></p>-->
         <div id="god-spell-container" class="action-slot god-spell-slot">
@@ -277,9 +373,11 @@
 
         </div>
         <div id="right-slots">
+        <div id="buff-slots-container">
         <button id="slot-r-0" class="hudSlotBuff action-slot"></button>
         <button id="slot-r-1" class="hudSlotBuff action-slot"></button>
         <button id="slot-r-2" class="hudSlotBuff action-slot"></button>
+        </div>
         </div>
     </div>
     </body>

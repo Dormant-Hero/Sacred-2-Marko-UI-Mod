@@ -15,20 +15,22 @@
 
             .spacer {
                 position: relative;
-                width: 8dp;
+                width: 0dp;
                 height: 100%;
             }
 
             .action-slot {
                 position: relative;
                 display: flex;
-                width: 32dp;
+                width: 46dp;
                 height: 32dp;
+                margin-right: -15dp;
             }
 
             .god-spell-slot {
                 width: 96dp;
                 height: 96dp;
+                left: 45.05%;
             }
 
             .god-spell-slot button {
@@ -37,7 +39,6 @@
 
             .god-spell-slot .icon {
                 top: 0.7dp;
-                left: 0.7dp;
             }
 
             button.god-spell-button:focus,
@@ -71,9 +72,9 @@
 
             .taskbar {
                 position: absolute;
-                width: 500dp;
                 bottom: 34dp;
-                left: 50%;
+                left: 0;
+                right: 0;
                 height: 48dp;
                 transform: translateX(-50%);
                 display: flex;
@@ -84,21 +85,23 @@
             }
 
             .taskbar.inventory {
-                left: 853.5dp;
+                left: 360dp;
                 decorator: image(InventorySlot-center-bigx3 contain);
                 height: 100dp;
+                transform: scale(1.5)
 
             }
 
             .taskbar.inventory .hudSlotPotion {
-                transform: scale(1);
-                left: 0dp;
+                transform: scale(0.6);
+                margin: -18dp;
+                left: -40dp;
                 top: 0dp;
 }
 
             .taskbar.inventory .hudSlotBuff {
                 transform: scale(1);
-                left: 0dp;
+                left: -15dp;
                 top: 0dp;
 }
 
@@ -111,10 +114,15 @@
                 height: 100dp;
             }
 
+            .taskbar.inventory .god-spell-slot {
+                left: -30dp;
+            }
+
             .taskbar.combat-arts {
-                left: 465dp;
+                left: -350dp;
                 decorator: image(InventorySlot-center-bigx3 contain);
                 height: 100dp;
+                transform: scale(1.5);
             }
 
             .taskbar.combat-arts-scaled {
@@ -125,16 +133,22 @@
             }
 
             .taskbar.combat-arts .hudSlotPotion {
-                transform: scale(1);
-                left: 0dp;
+                transform: scale(0.6);
+                margin: -18dp;
+                left: -40dp;
                 top: 0dp;
 }
 
             .taskbar.combat-arts .hudSlotBuff {
                 transform: scale(1);
-                left: 0dp;
+                left: -15dp;
                 top: 0dp;
 }
+
+            .taskbar.combat-arts .god-spell-slot {
+                left: -30dp;
+            }
+
 
             .stack-empty {
                 opacity: 0.5;
@@ -149,7 +163,7 @@
 
             .icon-buff {
                 position: relative;
-                width: 100%;
+                width: 75%;
                 height: 100%;
                 object-fit: contain;
                 transform: scale(1.55);
@@ -196,7 +210,7 @@
             }
 
             .godspell-prompt {
-                left: 190dp;
+
                 visibility:hidden
             }
 
@@ -214,14 +228,14 @@
             }
 
             .hudSlotPotion {
-                bottom: 32dp;
-                left: 34dp;
+                bottom: 34dp;
+                left: 786dp;
                 transform: scale(.5);
             }
 
             .hudSlotBuff {
                 bottom: 32dp;
-                right: 34dp;
+                left: 750dp;
                 transform: scale(.5);
             }
 
@@ -235,7 +249,13 @@
         <div class="use-buff buff-prompt" id="prompt-buff"></div>
         <div class="use-potion potion-prompt" id="prompt-potion"></div>
         <!-- Potions -->
-        <button id="slot-l-2" class="hudSlotPotion action-slot"  style="margin-left: -120dp;"></button>
+        <div id="potion-slots-container"></div>
+        <div id="potion-row-top" class="potion-row"></div>
+        <div id="potion-row-bottom" class="potion-row"></div>
+        <button id="slot-l-5" class="hudSlotPotion action-slot" style="margin-left: -120dp;"></button>
+        <button id="slot-l-4" class="hudSlotPotion action-slot"></button>
+        <button id="slot-l-3" class="hudSlotPotion action-slot"></button>
+        <button id="slot-l-2" class="hudSlotPotion action-slot"></button>
         <button id="slot-l-1" class="hudSlotPotion action-slot"></button>
         <button id="slot-l-0" class="hudSlotPotion action-slot"></button>
         <p class="spacer"></p>
@@ -245,6 +265,7 @@
 
         </div>
         <p class="spacer"></p>
+        <div id="buff-slots-container"></div>
         <button id="slot-r-0" class="hudSlotBuff action-slot"></button>
         <button id="slot-r-1" class="hudSlotBuff action-slot"></button>
         <button id="slot-r-2" class="hudSlotBuff action-slot"></button>

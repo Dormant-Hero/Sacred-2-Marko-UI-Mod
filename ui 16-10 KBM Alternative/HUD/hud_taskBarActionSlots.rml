@@ -3,7 +3,7 @@
         <link type="text/template" href="../global/fullscreenMenu.rml"/>
         <link type="text/rcss" href="../global/mainMenuHeroElements.rcss"/>
         <link type="text/rcss" href="../HUD/hud_Spritesheet.rcss"/>
-        <link type="text/rcss" href="hud_taskBar.rcss"/>
+        <link type="text/rcss" href="./hud_taskBar.rcss"/>
         <link type="text/rcss" href="../Ingame/inventoryCaElements.rcss"/>
         <link type="text/rcss" href="../Ingame/spells.rcss"/>
         <title>hud_taskBarActionSlots</title>
@@ -40,7 +40,7 @@
 
             .action-slot-container-left {
                 position: absolute;
-                left: 27.5%;
+                left: 23%;
                 bottom: 35dp;
             }
 
@@ -51,13 +51,13 @@
             .action-slot-container-right {
                 position: absolute;
                 bottom: 35dp;
-                right: 24%;
+                right: 23.8%;
             }
 
             /* Inventory */
             .inventory-right {
                 position: absolute;
-                bottom: 22dp;
+                bottom: 9dp;
                 right: 28dp;
                 width: 130dp;
                 height: 130dp;
@@ -67,20 +67,23 @@
             .inventory-right .action-slot-container .top-row1{
                 position: absolute;
                 left: 4dp;
-                top: 12dp;
+                top: 4dp;
+                transform: scale(0.8);
             }
 
             .inventory-right .action-slot-container .top-row2{
                 display: block-inline;
                 position: absolute;
                 left: 62dp;
-                top: 12dp;
+                top: 4dp;
+                transform: scale(0.8);
             }
 
             .inventory-right .action-slot-container .bottom-row1{
                 position: absolute;
                 left: 4dp;
                 top: 70dp;
+                transform: scale(0.8);
             }
 
             .inventory-right .action-slot-container .bottom-row2{
@@ -88,14 +91,21 @@
                 position: absolute;
                 left: 62dp;
                 top: 70dp;
+                transform: scale(0.8);
             }
 
+            .inventory-right .action-slot-container .middle-button{
+                position: absolute;
+                left: 33dp;
+                top: 37dp;
+                transform: scale(0.8);
+            }
 
 
             .inventory-left {
                 position: absolute;
-                bottom: 22dp;
-                left: 376dp;
+                bottom: 8dp;
+                left: 380dp;
                 width: 130dp;
                 height: 130dp;
                 decorator: image(InventoryBackgroundL2);
@@ -104,25 +114,36 @@
             .inventory-left .action-slot-container .top-row1{
                 position: absolute;
                 left: 4dp;
-                top: 14dp;
+                top: 3dp;
+                transform: scale(0.8);
             }
 
             .inventory-left .action-slot-container .top-row2{
                 position: absolute;
                 left: 62dp;
-                top: 14dp;
+                top: 3dp;
+                transform: scale(0.8);
             }
 
             .inventory-left .action-slot-container .bottom-row1{
                 position: absolute;
                 left: 4dp;
                 top: 70dp;
+                transform: scale(0.8);
             }
 
             .inventory-left .action-slot-container .bottom-row2{
                 position: absolute;
                 left: 62dp;
                 top: 70dp;
+                transform: scale(0.8);
+            }
+
+            .inventory-left .action-slot-container .middle-button{
+                position: absolute;
+                left: 32dp;
+                top: 36dp;
+                transform: scale(0.8);
             }
 
             /* Attributes */
@@ -162,7 +183,7 @@
             .combat-arts-left {
                 position: absolute;
                 bottom: 13dp;
-                left: 33dp;
+                left: 30dp;
                 width: 130dp;
                 height: 130dp;
                 decorator: image(InventoryBackgroundL2);
@@ -173,35 +194,43 @@
                 position: absolute;
                 left: 0dp;
                 top: 0dp;
+                transform: scale(0.8);
             }
 
             .combat-arts-left .action-slot-container .top-row1{
                 position: absolute;
-                left: 4dp;
-                top: 14dp;
+                left: -22dp;
+                top: 6dp;
             }
 
             .combat-arts-left .action-slot-container .top-row2{
                 position: absolute;
-                left: 62dp;
-                top: 14dp;
+                left: 58dp;
+                top: 6dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 4dp;
-                top: 70dp;
+                left: -22dp;
+                top: 85dp;
             }
 
             .combat-arts-left .action-slot-container .bottom-row2{
                 position: absolute;
-                left: 62dp;
-                top: 70dp;
+                left: 58dp;
+                top: 85dp;
             }
+
+            .combat-arts-left .action-slot-container .middle-button{
+                position: absolute;
+                left: 18dp;
+                top: 46dp;
+            }
+
 
             .combat-arts-right {
                 position: absolute;
-                bottom: 22dp;
+                bottom: 13dp;
                 right: 380dp;
                 width: 130dp;
                 height: 130dp;
@@ -213,32 +242,37 @@
                 position: absolute;
                 left: 0dp;
                 top: 0dp;
+                transform: scale(0.8);
             }
 
             .combat-arts-right .action-slot-container .top-row1{
                 position: absolute;
-                left: 4dp;
-                top: 12dp;
+                left: -22dp;
+                top: 6dp;
             }
 
             .combat-arts-right .action-slot-container .top-row2{
-                display: block-inline;
                 position: absolute;
-                left: 62dp;
-                top: 12dp;
+                left: 58dp;
+                top: 6dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row1{
                 position: absolute;
-                left: 4dp;
-                top: 70dp;
+                left: -22dp;
+                top: 85dp;
             }
 
             .combat-arts-right .action-slot-container .bottom-row2{
-                display: block-inline;
                 position: absolute;
-                left: 62dp;
-                top: 70dp;
+                left: 58dp;
+                top: 85dp;
+            }
+
+            .combat-arts-right .action-slot-container .middle-button{
+                position: absolute;
+                left: 18dp;
+                top: 46dp;
             }
 
 
@@ -260,33 +294,33 @@
             }
 
             button.active-weapon-slot {
-                decorator: image(CA-slot-active contain);
+                decorator: image(round-slot-active contain);
             }
 
             button.active-weapon-slot:focus,
             button.active-weapon-slot:focus-visible,
             button.active-weapon-slot:hover {
-                decorator: image(CA-slot-active contain);
+                decorator: image(round-slot-active contain);
             }
 
             button.active-weapon-slot:selected,
             button.active-weapon-slot:active {
-                decorator: image(CA-slot-active contain);
+                decorator: image(round-slot-active contain);
             }
 
             button.active-spell-slot {
-                decorator: image(CA-slot-active contain);
+                decorator: image(round-slot-active contain);
             }
 
             button.active-spell-slot:focus,
             button.active-spell-slot:focus-visible,
             button.active-spell-slot:hover {
-                decorator: image(CA-slot-active contain);
+                decorator: image(round-slot-active contain);
             }
 
             button.active-spell-slot:selected,
             button.active-spell-slot:active {
-                decorator: image(CA-slot-active contain);
+                decorator: image(round-slot-active contain);
             }
 
             .cooldown-gauge {
@@ -350,8 +384,9 @@
             <div class="action-slot-row">
                 <button id="slot-0" raw_id="0" class="hudSlot action-slot top-row1"></button>
                 <button id="slot-1" raw_id="1" class="hudSlot action-slot top-row2"></button>
-                <button id="slot-2" raw_id="2" class="hudSlot action-slot bottom-row2"></button>
-                <button id="slot-3" raw_id="3" class="hudSlot action-slot bottom-row1"></button>
+                <button id="slot-2" raw_id="2" class="hudSlot action-slot bottom-row1"></button>
+                <button id="slot-3" raw_id="3" class="hudSlot action-slot bottom-row2"></button>
+                <button id="slot-4" raw_id="4" class="hudSlot action-slot middle-button"></button>
             </div>
             <div class="" id="switch-prompt"></div>
         </div>

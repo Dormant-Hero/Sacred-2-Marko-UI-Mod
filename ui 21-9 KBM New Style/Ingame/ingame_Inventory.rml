@@ -7,15 +7,16 @@
         <link type="text/rcss" href="../Ingame/inventoryCaElements.rcss"/>
         <link type="text/rcss" href="../Ingame/items_FilterTabbar.rcss"/>
         <link type="text/rcss" href="../Ingame/items_Grid.rcss"/>
+		<link type="text/rcss" href="../Ingame/journal_Spritesheet.rcss"/>
         <title>ingame_Inventory</title>
         <style>
 
             /*Luna- I fucked it up and named all that is left right and all tht is right left, sorry but to late to change :(*/
             .background-right-panels
             {
-                width: 497dp;
-                height: 624dp;
-                top:10%;
+                width: 500dp;
+                height: 90%;
+                top: 9%;
                 left: 1.5%;
                 position: absolute;
                 display: block;
@@ -24,11 +25,10 @@
 
             #inventory-right-panel
             {
-
                 pointer-events: auto;
                 width: 349dp;
-                height: 88.3%;
-                top:10%;
+                height: 90%;
+                top: 9%;
                 left: 1.5%;
                 position: absolute;
                 display: flex;
@@ -40,8 +40,9 @@
             {
                 pointer-events: auto;
                 width: 150dp;
-                top:83dp;
-                left: 365dp;
+				height: 515dp;
+                top: 70dp;
+                left: 366dp;
                 position: absolute;
                 display: flex;
                 justify-content: start;
@@ -82,8 +83,10 @@
             }
             #inventory-equip-panel-jewelry-top,
             #inventory-equip-panel-jewelry-bottom,
-            #inventory-equip-panel-orb-top,
-            #inventory-equip-panel-orb-bottom
+            #inventory-equip-panel-orb-1,
+            #inventory-equip-panel-orb-2,
+            #inventory-equip-panel-orb-3,
+            #inventory-equip-panel-orb-4
             {
                 display: flex;
                 flex-direction: row;
@@ -94,9 +97,9 @@
             #background-grid,
             #inventory-container
             {
-                top:75dp;
-                left:18dp;
-                width: 350dp;
+                top: 7%;
+                left: 18dp;
+                width: 310dp;
                 height: auto;
                 display:flex;
                 flex-direction: column;
@@ -107,9 +110,9 @@
             #bottom-buttons-container
             {
                 position: absolute;
-                bottom: 22dp;
-                left: 10dp;
-                width: 90%;
+                bottom: 7.5dp;
+                left: 4%;
+                width: 100%;
                 height: 5%;
                 display: flex;
                 align-items: center;
@@ -119,8 +122,8 @@
             .gold-display
             {
                 height: 100%;
-                width: 150dp;
-                gap:10dp;
+                width: 43%;
+                gap: 10dp;
                 margin-left: 5dp;
                 text-align: center;
                 line-height: 100%;
@@ -129,6 +132,14 @@
                 display: flex;
                 justify-content: flex-end;
             }
+			
+			@media (theme: handheld) {
+			    .gold-display
+				{
+                    gap: 3dp;
+                    margin-left: 2dp;			        
+				}
+			}
 
             #gold-amount-text
             {
@@ -143,11 +154,6 @@
                 width:20dp;
                 height:20dp;
                 display:block;
-            }
-
-            #scrap-button
-            {
-                margin-left: 5%;
             }
 
             .equipment-slot
@@ -190,6 +196,23 @@
                 pointer-events: none;
             }
 
+            #orbsets-container {
+		        position: relative;
+				margin-top: auto;
+				margin-bottom: 10dp;
+			    width: 100%;
+				align-items: center;
+				justify-content: center;
+			}
+			
+            .orb-preset
+            {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        
             .orb-preset-selector-button
             {
                 width: 31dp;
@@ -200,44 +223,51 @@
                 font-family: OptimusPrinceps;
                 font-size: 2vh;
                 color: title;
-                decorator: image(Orb-button-default contain);
+                decorator: image(Orb-button-default);
             }
 
             .orb-preset-selector-button:hover,
             .orb-preset-selector-button:focus,
             .orb-preset-selector-button:focus-visible 
 			{
-			    decorator: image(Orb-button-focus contain);
+			    decorator: image(Orb-button-focus);
             }
 
             .orb-preset-selector-button:selected
             {
-                decorator: image(Orb-button-active contain);
+                decorator: image(Orb-button-active);
             }
 			
 			.orb-preset-selector-button:hover:selected,
             .orb-preset-selector-button:focus:selected,
 			.orb-preset-selector-button:hover:focus:selected,
             .orb-preset-selector-button:focus-visible:selected {
-			    decorator: image(Orb-button-active-focus contain);
+			    decorator: image(Orb-button-active-focus);
 			}
-
-            .orb-preset
-            {
-                width: 85%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
+			
+			.orb-button-letter
+			{
+			    height:50%;
+				width: 55%;
+				opacity: 0.5;
+			}
+			
+            .orb-preset-selector-button:selected .orb-button-letter,
+			.orb-preset-selector-button:hover .orb-button-letter,
+            .orb-preset-selector-button:focus .orb-button-letter,
+            .orb-preset-selector-button:focus-visible .orb-button-letter
+			{
+			    opacity: 1;
+			}
 
             .panel-1-1-orb
             {
-                decorator: image(Orb-background-default contain);
+                decorator: image(Orb-background-default);
             }
 
             .panel-1-1-orb-inactive
             {
-                decorator: image(Orb-background-inactive contain);
+                decorator: image(Orb-background-inactive);
             }
 
             #inventory-filters
@@ -247,16 +277,25 @@
                 height: 100%;
                 justify-content: space-evenly;
                 align-items: center;
+				margin-left: 15dp;
             }
 
             #tabbar-container-secondary-inventory
             {
-                justify-content: space-evenly;
+                top: 4dp;
+				height: 40dp;
+				justify-content: space-evenly;
             }
+
+            #secondary-tab-prev,
+			#secondary-tab-next
+			{
+			    margin-top: 0dp;
+			}
 
             .secondary-tabbar-button
             {
-                height: 40dp;
+                height: 27.5dp;
                 width: 30dp;
                 display: flex;
                 flex: 1;
@@ -273,8 +312,8 @@
             {
                 position: absolute;
                 pointer-events: auto;
-                bottom: 75dp;
-                left: 30dp;
+                bottom: 50dp;
+                left: 2.3%;
                 width: 175dp;
                 height: 300dp;
                 decorator: image(mount-background contain);
@@ -285,29 +324,7 @@
                 justify-content: space-evenly;
                 align-items: center;
                 z-index: 100;
-            }
-
-            #mounts-button,
-            #scrap-button
-            {
-
-                text-align: center;
-                line-height: 100%;
-                font-size: 13dp;
-                width: 25%;
-                z-index: 101;
-            }
-
-            #mounts-button
-            {
-                max-width: 80dp;
-            }
-
-            #scrap-button
-            {
-                margin-left: 3dp;
-                max-width: 100dp;
-            }
+            }	
 
             .mount-selector-button
             {
@@ -339,13 +356,74 @@
 
             }
 
-            .statistic-button-style
+            .icon-button-container
+			{
+			    position: absolute;
+				top: 440dp;
+				left: 36dp;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+				gap: 11dp;
+			}
+
+            .icon-button
             {
                 font-size: 1.5vh;
-                max-width: 100dp;
+                width: 20dp;
+				height: 15dp;
+				decorator: image(Orb-button-active);
+				colot: #b5a35d;
             }
+			
+			.icon-button:hover,
+			.icon-button:hover:focus,
+			.icon-button:focus
+			{
+			    decorator: image(Orb-button-active-focus);
+			}
+			
+			.icon-button.disabled,
+			.icon-button.disabled:hover,
+			.icon-button.disabled:focus,
+			.icon-button.disabled:hover:focus,
+			.icon-button:disabled,
+			.icon-button:disabled:hover,
+			.icon-button:disabled:focus,
+			.icon-button:disabled:hover:focus
+			{
+			    decorator: image(Orb-button-default);
+				opacity: 0.5;
+			}
+			
+			.icon-button-icon
+			{
+			    display: inline-block;
+                z-index: 10;
+				width: 20dp;
+				height: 20dp;
+				margin-top: -3dp;
+			}
 
+			.mounts-button-icon
+			{
+				decorator: image("Mounts-Icon-active");
+			}
 
+            .statistics-button-icon
+			{
+				decorator: image("Statistics-Icon-active");
+			}
+			
+			.smithing-button-icon
+			{
+				decorator: image("Smithing-Icon-active");
+			}
+			
+           .scrap-button-icon
+			{
+				decorator: image("Scrap-Icon-active");
+			}
 
         </style>
     </head>
@@ -387,8 +465,18 @@
 
         <!-- Bottom Buttons -->
         <div id="bottom-buttons-container">
-            <button id="mounts-button" onclick="OnMountButtonClick">3601274375</button>
-            <button id="scrap-button" onclick="OnScrapItem">2602462658</button>
+            <button id="mounts-button" class="icon-button" onclick="OnMountButtonClick">
+				<div class="icon-button-icon mounts-button-icon"></div>
+			</button>
+			<button id="statistics-button"  class="icon-button" onclick="OnStatsButtonClick">
+			    <div class="icon-button-icon statistics-button-icon"></div>
+		    </button>
+			<button id="smithy-button" class="icon-button disabled">
+				<div class="icon-button-icon smithing-button-icon"></div>
+			</button>
+            <button id="scrap-button" class="icon-button" onclick="OnScrapItem">
+				<div class="icon-button-icon scrap-button-icon"></div>
+			</button>
             <div class="gold-display points-back">
                 <div id="gold-amount-text" style="color: secondary-list-value; font-family: OptimusPrinceps; font-size: 2.7vh;">0</div>
                 <div class="gold-icon gold-icon-position"></div>
@@ -404,6 +492,7 @@
             <img class="mount-icon" id="special-mount-icon" onclick="OnSelectSpecialMount" onmouseover="OnHoverSpecialMount" onmouseout="OnHoverSpecialMountEnd"/>
         </div>
     </panel>
+
     <panel id="inventory-equip-panel">
         <div id="inventory-equip-panel-armor">
             <div id="inventory-equip-panel-armor-left">
@@ -414,19 +503,32 @@
         </div>
         <div id="inventory-equip-panel-jewelry-top"></div>
         <div id="inventory-equip-panel-jewelry-bottom"></div>
-        <div class="orb-preset">
-            <div class="orb-preset-selector-button" id="orb-preset-1" onclick="OnSelectFirstOrbPreset">
-                <img style="height:50%;" sprite ="Orb-button-letter-I"/>
+		<div id="orbsets-container">
+            <div class="orb-preset">
+                <div class="orb-preset-selector-button" id="orb-preset-1" onclick="OnSelectFirstOrbPreset" forced-nav-up="Equip-Slot-Amulet1">
+                    <img class="orb-button-letter" sprite ="Orb-button-letter-I-selected"/>
+                </div>
+                <div id="inventory-equip-panel-orb-1"></div>
             </div>
-            <div id="inventory-equip-panel-orb-top"></div>
-        </div>
-        <div class="orb-preset">
-            <div class="orb-preset-selector-button" id="orb-preset-2" onclick="OnSelectSecondOrbPreset">
-                <img style="height:50%;" sprite ="Orb-button-letter-II"/>
+            <div class="orb-preset">
+                <div class="orb-preset-selector-button" id="orb-preset-2" onclick="OnSelectSecondOrbPreset">
+                    <img class="orb-button-letter" sprite ="Orb-button-letter-II-selected"/>
+                </div>
+                <div id="inventory-equip-panel-orb-2"></div>
             </div>
-            <div id="inventory-equip-panel-orb-bottom"></div>
-        </div>
-        <button id="statistics-button"  class="statistic-button-style" onclick="OnStatsButtonClick">4246066798</button>
+		    <div class="orb-preset">
+			    <div class="orb-preset-selector-button" id="orb-preset-3" onclick="OnSelectThirdOrbPreset">
+				    <img class="orb-button-letter" sprite ="Orb-button-letter-III-selected"/>
+			    </div>
+			    <div id="inventory-equip-panel-orb-3"></div>
+		    </div>
+		    <div class="orb-preset">
+			    <div class="orb-preset-selector-button" id="orb-preset-4" onclick="OnSelectFourthOrbPreset" forced-nav-down="slot-0">
+				    <img class="orb-button-letter" sprite ="Orb-button-letter-IV-selected"/>
+			    </div>
+			    <div id="inventory-equip-panel-orb-4"></div>
+		    </div>
+		</div>
     </panel>
     </body>
 </rml>

@@ -12,6 +12,53 @@
         <title>items_Tooltip</title>
         <style>
 
+            #tooltip-panel
+			{
+				top: 9%;
+			}
+
+            #tooltip-item-name
+            {
+                font-family: OptimusPrinceps;
+                font-size: 2.5vh;
+                color: title;
+                width: 90%;
+                text-anchor: start;
+                text-wrap: auto;
+                margin-top: 15dp;
+            }
+
+			#tooltip-item-wearer-class
+			{
+			    font-size: 2vh;
+				font-family: Inria Sans;
+			}
+
+			@media (theme: handheld){
+			    #tooltip-item-wearer-class
+			    {
+			        font-size: 2.5vh;
+			    }
+			}
+
+			#tooltip-item-level-text
+			{
+			    color:gray;
+				font-size: 2vh;
+				font-family: Inria Sans;
+			}
+
+			#tooltip-item-level
+			{
+				font-size: 2vh;
+			}
+
+			#tooltip-item-hold-type
+			{
+			    color:yellow;
+				font-size: 2vh;
+			}
+
             #tooltip-skill-needed
             {
                 color: red;
@@ -38,6 +85,15 @@
                 text-anchor: start;
                 margin-left: 5dp;
             }
+
+            #set-bonus-title
+			{
+			    width:90%;
+				font-size: 2vh;
+				color: green;
+				margin-top: 5dp;
+				margin-bottom: 5dp;
+			}
 
             .price
             {
@@ -74,6 +130,16 @@
                 height: 25dp;
                 display: block;
                 margin-left: 5dp;
+            }
+
+            #requirement-skill-icon
+            {
+                width: 25dp;
+                height: 25dp;
+                position: relative;
+                display: block;
+                mask-image: image(skills-slot-square-default-mask contain);
+                z-index: 2;
             }
 
             .stat-value-icon
@@ -160,6 +226,11 @@
                 width: 90%;
             }
 
+			#mastery-requirements-separator
+			{
+			    margin-bottom: 3dp;
+			}
+
             .defence-damage-type-bar
             {
                 width: 50%;
@@ -234,7 +305,7 @@
 
 
                     <div  id="mastery-requirements-panel">
-                        <div style="margin-bottom: 3dp;" class="separator"></div>
+                        <div id="mastery-requirements-separator" class="separator"></div>
                         <div id="tooltip-skill-needed"></div>
                         <div class="mastery-panel">
 
